@@ -1,8 +1,26 @@
+import { Container, Filters, TopBar, Title } from "@/components/shared/index";
 
 export default function Home() {
   return (
     <>
-    salom
+      <Container className="mt-10">
+        <Title text="Все пиццы" size="lg" className="font-extrabold" />
+      </Container>
+      <TopBar />
+      <Container className='pb-14 mt-10'>
+        <div className="flex gap-[60px]">
+          {/* Filter */}
+          <div className="w-[250px]">
+            <Filters />
+          </div>
+          {/* Lists-Product */}
+          <div className="flex-1">
+            <div className="flex flex-col gap-16">
+              Lists Products
+            </div>
+          </div>
+        </div>
+      </Container>
     </>
   );
 }
